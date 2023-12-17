@@ -1,0 +1,110 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-grow: 1;
+}
+
+.settings {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.card {
+  border: 1px solid var(--primary);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.cardGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 500px;
+}
+.title {
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.description {
+  font-weight: 600;
+}
+
+.difficulty {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.difficulty div,
+.closed {
+  position: relative;
+  cursor: pointer;
+}
+
+.difficulty div::before,
+.closed::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--primary);
+  transition: width 0.3s ease-in-out;
+}
+
+.difficulty div:hover::before,
+.difficulty div.selected::before,
+.closed:hover::before {
+  width: 100%;
+}
+
+.card.progress {
+  border: 1px dotted var(--primary);
+}
+
+.difficultyStatusSelector {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.difficultySelector,
+.statusSelector {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.difficultySelector div,
+.statusSelector div {
+  position: relative;
+  cursor: pointer;
+}
+
+.difficultySelector div::before,
+.statusSelector div::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--primary);
+  transition: width 0.3s ease-in-out;
+}
+
+.difficultySelector div:hover::before,
+.difficultySelector div.selected::before,
+.statusSelector div:hover::before,
+.statusSelector div.selected::before {
+  width: 100%;
+}

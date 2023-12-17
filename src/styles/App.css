@@ -1,0 +1,112 @@
+html {
+  height: 100%;
+}
+body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#root {
+  margin: 0;
+  padding: 2rem;
+  text-align: center;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: inherit;
+}
+
+.logo {
+  height: 1em;
+  padding: 0.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 1px solid var(--primary);
+  background-color: var(--primary);
+  color: var(--onprimary);
+  font-weight: 600;
+  font-size: medium;
+}
+
+input[type="submit"]:hover {
+  background-color: var(--onprimary);
+  color: var(--primary);
+  border: 1px solid var(--primary);
+}
+
+input[type="email"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+input[type="textarea"].big {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+.custom-radio {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
