@@ -6,7 +6,7 @@ import Footer from "./components/Footer";
 import About from "./components/About";
 import EditCard from "./components/EditCard";
 import NewCard from "./components/NewCard";
-import CardGrid from "./components/cardgrid";
+import CardGrid from "./components/CardGrid";
 import cards from "./cards";
 
 function App() {
