@@ -2,7 +2,7 @@ import { useState } from "react";
 
 import "./styles/App.css";
 import Header from "./components/Header";
-import Footer from "./components/footer";
+import Footer from "./components/Footer";
 import About from "./components/About";
 import EditCard from "./components/EditCard";
 import NewCard from "./components/NewCard";
